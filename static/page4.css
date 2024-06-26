@@ -1,0 +1,107 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.sp1{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20vh;
+    color: #fff;
+    font-size: 25px;
+    z-index: 1;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+.sp2{
+    position:absolute;
+    top: 5px;
+    left:6vw;
+    font-family: 'Roboto', sans-serif;
+    font-weight: lighter;
+}
+.page4{
+    display: flex;
+    position: relative;
+    background-color: #fdc8c3;
+    height: 100vh;
+}
+.page4 h1{
+    display: flex;
+    position: absolute;
+    margin-top: 5vh;
+    left: 36vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    color: #000;
+}
+.page4 h1::after{
+    content: "";
+    position: absolute;
+    left: 2vw;
+    top: 7vh;
+    height: 4px;
+    width: 90%;
+    border-radius: 7px;
+    background-color: #000;
+    transition: all ease 0.5s;
+}
+.box2{
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    left: 21vw;
+    top: 20vh;
+    width: 60vw;
+    height: 70vh;
+    background-color: rgba(128, 128, 128, 0.156);
+    border-radius: 7px;
+    border: 1px solid #000;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0;
+}
+#findsong{
+    display: flex;
+    margin: 10px 0;
+    width: 38.5vw;
+    padding: 10px;
+    height: 4vh;
+    background-color: rgb(202, 201, 201);
+    border-radius: 3px;
+    border: .5px solid #000;
+    font-family: "Roboto",sans-serif;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    color: #fff;
+    margin: 20px 0;
+    background-color: rgb(93, 93, 233);
+    border-radius: 3px;
+    border: .5px solid #000;
+    font-family: "Roboto",sans-serif;
+}
+.data{
+    display: flex;
+    position: absolute;
+    top: 50vh;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto",sans-serif;
+}

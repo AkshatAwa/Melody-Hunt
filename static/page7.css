@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.page7{
+    display: flex;
+    position: relative;
+    background-color: #CAEAE5;
+    height: 100vh;
+}
+.page7 h1{
+    display: flex;
+    position: absolute;
+    margin-top: 5vh;
+    left: 45vw;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto";
+    color: #000;
+}
+.page7 h1::after{
+    content: "";
+    position: absolute;
+    top: 7vh;
+    height: 4px;
+    width: 85%;
+    border-radius: 7px;
+    background-color: #000;
+    transition: all ease 0.5s;
+}

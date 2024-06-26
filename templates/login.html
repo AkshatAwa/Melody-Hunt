@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login to Melody-Hunt</title>
+    <link rel="stylesheet" href="static/login.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <span class="sp1">Melody Hunt</span>
+    <div class="nav">
+        <nav>
+            <div class="list">
+                <ul>
+                    <li><a href="#">SignUp Now!</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">About Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="container">
+        <div class="form">
+            <h2 class="name">Login</h2>
+            <form action="/form_login" method="POST">
+                <label for="Username">Username</label>
+                <input type="text" id="Username" name="Username" placeholder="Type your Username here" required>
+                <label for="Password">Password</label>
+                <input type="password" id="Password" name="Password" placeholder="Type your Password" required>
+                <button class="btn" value="Login">Login</button>
+                <h3 class="error">{{info}}</h3>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    background: linear-gradient(rgb(204, 113, 204),rgb(103, 103, 177));
+}
+.sp1{
+    display: flex;
+    position: absolute;
+    top: 20px;
+    left: 20vh;
+    color: #fff;
+    font-size: 25px;
+    z-index: 1;
+    font-family: "Roboto",sans-serif;
+}
+.nav{
+    display: flex;
+    position: absolute;
+    color: white;
+    width: 100vw;
+    height: 10vh;
+    overflow: hidden;
+}
+li{
+    display: inline-flex;
+    font-family: "Roboto",sans-serif;
+    position: relative;
+    justify-content: space-around;
+    margin: 3.5vh 1.5vw;
+}
+.list{
+    position: relative;
+    left: 67vw;
+    margin-left: 30px;
+}
+.list ul li::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 0.8px;
+    width: 0%;
+    background-color: #fff;
+    transition: all ease 0.5s;
+}
+.list ul li:hover::after{
+    width: 100%;
+}
+.nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: flex;
+    position: relative;
+    left: 40%;
+    top: 25%;
+    background:#fff;
+    padding: 20px;
+    width: 20vw;
+    height: 50vh;
+}
+.name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(59, 59, 121);
+    font-family: "Roboto",sans-serif;
+    font-weight: 700;
+}
+.form form{
+    display: flex;
+    flex-direction: column;
+    margin: 35px 0;
+}
+#Username{
+    display: flex;
+    margin: 10px 0;
+    width: 18.5vw;
+    padding: 10px;
+    height: 4vh;
+    background-color: rgb(202, 201, 201);
+    border-radius: 3px;
+    border: .5px solid #fff;
+    font-family: "Roboto",sans-serif;
+}
+#Password{
+    display: flex;
+    margin: 10px 0;
+    width: 18.5vw;
+    padding: 10px;
+    height: 4vh;
+    background-color: rgb(202, 201, 201);
+    border-radius: 3px;
+    border: .5px solid #fff;
+    font-family: "Roboto",sans-serif;
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 6vh;
+    color: #fff;
+    margin: 20px 0;
+    background-color: rgb(93, 93, 233);
+    border-radius: 3px;
+    border: .5px solid #fff;
+    font-family: "Roboto",sans-serif;
+}
+.error{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(198, 193, 193);
+    border-radius: 3px;
+    color: #fff;
+    font-family: "Roboto",sans-serif;
+}

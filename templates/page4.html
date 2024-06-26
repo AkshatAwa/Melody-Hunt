@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find your favourite song-Melody Hunt</title>
+    <link rel="stylesheet" href="static/page4.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <span class="sp1">Melody <span class="sp2">Hunt</span></span>
+    <div class="page4" id="pg4">
+        <h1>GET DETAILS OF YOUR SONG</h1>
+        <div class="content">
+            <div class="box2">
+                <div class="form">
+                    <h2 class="name">Enter Details here</h2>
+                   <form action="/finding_song" method="POST">
+                        <label for="findsong">Find Lyrics</label>
+                        <input type="text" id="findsong" name="findsong" placeholder="Enter Song name here" required>
+                        <button class="btn" value="Login">Search Song</button>
+                   </form>
+                </div>
+                <h3 class="data">{{data}}</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

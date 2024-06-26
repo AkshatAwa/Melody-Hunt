@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Melody-Hunt</title>
+    <link rel="stylesheet" href="static/home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@100;300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <span class="sp1">Melody <span class="sp2">Hunt</span></span>
+    <div class="nav">
+        <nav>
+            <div class="list">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#pg2">About Us</a></li>
+                    <li><a href="#pg3">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+    <div class="content">
+        <div class="left-col">
+            <h1>EXPLORE<br>THE<br>MUSIC<br>WORLD</h1>
+        </div>
+    </div>
+    <div class="right-col">
+        <div class="opt">
+            <ul>
+                <li><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                        <path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z"
+                            fill="rgba(255,255,255,1)"></path>
+                    </svg><a href={{url_for('page2')}}>Access to your Songs</a></li>
+                <li><a href={{url_for('page3')}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                            <path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="rgba(255,255,255,1)"></path>
+                        </svg>Search Song by its Lyrics</a></li>
+                <li><a href={{url_for('page4')}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                            <path
+                                d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z"
+                                fill="rgba(255,255,255,1)"></path>
+                        </svg>Get details of your favourite songs</a></li>
+                <li><a href={{url_for('page5')}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                            <path
+                                d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z"
+                                fill="rgba(255,255,255,1)"></path>
+                        </svg>Add a song to your Playlist</a></li>
+                <li><a href={{url_for('page6')}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                            <path
+                                d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z"
+                                fill="rgba(255,255,255,1)"></path>
+                        </svg>Remove a song from playlist</a></li>
+                <li><a href={{url_for('login_page')}}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18">
+                            <path d="M13.1714 12.0007L8.22168 7.05093L9.63589 5.63672L15.9999 12.0007L9.63589 18.3646L8.22168 16.9504L13.1714 12.0007Z" fill="rgba(255,255,255,1)"></path>
+                            </svg>Go back to Login Page</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <hr>
+    <div class="page2" id="pg2">
+        <div><h1>About MelodyHunt</h1></div>
+
+    <section>
+        <h2>Our Mission</h2>
+        <p>At MelodyHunt, we are driven by a singular mission – to ignite the spark of music discovery in every heart. We believe that great tunes are everywhere, waiting to be found, appreciated, and shared. Our platform is more than just a music discovery website; it's a celebration of diverse melodies, a curator of sonic experiences, and a community where music lovers unite.</p>
+
+        <h2>What Sets Us Apart</h2>
+        <p><span class="highlight">Curated Discovery:</span> We understand that discovering new music should be a delightful journey, not a daunting task. MelodyHunt employs cutting-edge algorithms and passionate music curators to deliver a personalized, curated playlist tailored just for you. Say goodbye to endless scrolling and hello to a soundtrack that resonates with your unique taste.</p>
+
+        <p><span class="highlight">Community Connection:</span> Music is a shared experience, and MelodyHunt is your gateway to connect with like-minded music enthusiasts. Join the conversation, share your favorite tracks, and explore recommendations from a community that celebrates the diversity of musical expression. Your playlist is not just yours; it's a communal celebration of the artistry of sound.</p>
+
+        <p><span class="highlight">Artist Spotlight:</span> We believe in supporting emerging talent. MelodyHunt is committed to shining a spotlight on independent and undiscovered artists, providing them with a platform to showcase their craft. Your discovery journey goes beyond mainstream hits, introducing you to the voices and melodies that are shaping the future of music.</p>
+
+        <p><span class="highlight">Seamless Integration:</span> Seamlessly integrate MelodyHunt into your daily life. Our platform effortlessly syncs across devices, allowing you to pick up where you left off, whether you're on your computer, tablet, or smartphone. Enjoy uninterrupted access to your favorite tunes, anytime, anywhere. Music should be as flexible as you are.</p>
+    </section>
+    <footer>
+        <p>Thank you for being a part of our musical odyssey. Tune in, discover, and let the melody hunt begin! - The MelodyHunt Team</p>
+    </footer>
+    </div>
+    <div class="page3" id="pg3">
+        <div><h1>Contact Us</h1></div>
+        <div class="footer-logo">
+            <h1>Melody Hunt</h1>
+            <p>EXPLORE THE MUSIC WORLD</p>
+        </div>
+        <div class="footer-contact" id="C">
+            <h3>Contact Us</h3>
+            <p>Email: info@melodyhunt.com</p>
+            <p>Phone: 1234567898</p>
+        </div>
+        <div class="footer-social">
+            <h3>Follow Us</h3>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Facebook_Logo_%282019%29.png/1024px-Facebook_Logo_%282019%29.png" alt="Facebook"></a>
+            <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6f/Logo_of_Twitter.svg/512px-Logo_of_Twitter.svg.png?20220821125553" alt="Twitter"></a>
+            <a href="#"><img src="https://freelogopng.com/images/all_img/1658587303instagram-png.png" alt="Instagram"></a>
+        </div>
+    </div>
+</body>
+
+</html>
